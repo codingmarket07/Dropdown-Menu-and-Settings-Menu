@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+:root{
+  --bg-clr: #fcbf19;
+  --white: #fff;
+  --btn-bg-clr: #dc555f;
+  --btn-hover-clr: #9e3c48;
+  --ddlist-textclr: #adadad;
+  --ddlist-hover-bgclr: #f0f0f0;
+  --ddlist-hover-textclr: #dc555f;  
+}
+
 *{
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -11,7 +21,7 @@
 }
 
 body{
-  background: #fcbf19;
+  background: var(--bg-clr);
 }
 
 .wrapper{
@@ -30,8 +40,8 @@ body{
 
 .dropdown button{
   border: 0;
-  background: #dc555f;
-  color: #fff;
+  background: var(--btn-bg-clr);
+  color: var(--white);
   padding: 16px 28px;
   width: 225px;
   height: 50px;
@@ -49,7 +59,7 @@ body{
 
 .dropdown button:hover,
 .dropdown button.active{
-  background: #9e3c48;
+  background: var(--btn-hover-clr);
 }
 
 .dropdown button .icon{
@@ -62,7 +72,7 @@ body{
   display: none;
   width: 225px;
   margin-top: 35px;
-  background: #fff;
+  background: var(--white);
   border-radius: 3px;
   position: relative;
 }
@@ -71,7 +81,7 @@ body{
   display: flex;
   padding: 16px 20px;
   height: 50px;
-  color: #adadad;
+  color: var(--ddlist-textclr);
   font-size: 14px;
   font-weight: bold;
   align-items: center;
@@ -86,8 +96,8 @@ body{
 }
 
 .dropdown ul li a:hover{
-  background: #f0f0f0;
-  color: #dc555f;
+  background: var(--ddlist-hover-bgclr);
+  color: var(--ddlist-hover-textclr);
 }
 
 .dropdown ul li:first-child a{
@@ -107,7 +117,7 @@ body{
   left: 50%;
   transform: translateX(-50%);
   border: 15px solid;
-  border-color: transparent transparent #fff transparent;
+  border-color: transparent transparent var(--white) transparent;
   z-index: 1;
 }
 
